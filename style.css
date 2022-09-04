@@ -1,0 +1,154 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    font-size: 1rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--pale-blue);
+}
+
+main {
+    display: block;
+    width: 22rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.music-svg {
+    height: 10rem;
+    width: inherit;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.music-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 1rem;
+}
+
+
+.annual-plan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.music-article-text {
+    text-align: center;
+    width: 85%;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: var(--desaturated-blue);
+    font-weight: 500;
+}
+
+.annual-plan {
+    background-color: var(--very-pale-blue);
+    padding: 0.75rem 1rem;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.prices {
+    margin-left: 0.75rem;
+}
+
+.annual-plan-price {
+    font-size: 0.9rem;
+}
+
+.annual-plan-price-year {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-top: 0.25rem;
+    color: var(--desaturated-blue);
+}
+
+.change {
+    font-size: 0.75rem;
+    margin-left: auto;
+}
+
+.change>a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.aside-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.payment-button {
+    background-color: var(--bright-blue);
+    padding: 0.75rem 3.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 900;
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cancel-button {
+    background-color: transparent;
+    border: none;
+    padding: 0.75rem 3.5rem;
+    color: var(--desaturated-blue);
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.payment-button:hover {
+    background-color: #766cf1;
+    cursor: pointer;
+}
+
+.cancel-button:hover {
+    color: black;
+    cursor: pointer;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
